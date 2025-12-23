@@ -1,4 +1,7 @@
+/*Fuentes importadas*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* RESET */
 
 * {
     margin: 0;
@@ -23,7 +26,11 @@ i {
     font: var(--f-heading-md);
 }
 
+/* VARIABLES */
+
 :root {
+
+    /* Fuentes */
 
     --f-heading-xl: 400 clamp(3.4em, 5vw, 3.8em) "DM Serif Display", serif;
     --f-heading-lg: 400 clamp(2.7em, 4vw, 3em) "DM Serif Display", serif;
@@ -32,8 +39,12 @@ i {
     --f-body: 400 clamp(0.8em, 1vw, 1em) "DM Sans", sans-serif;
     --f-link: 500 clamp(0.8em, 1vw, 1em) "DM Sans", sans-serif;
 
+    /* Colores */
+
     --c-text: #161616;
     --c-light: #f1eeee;
+
+    /* Espacios */
 
     --s-xl: 4rem;
     --s-lg: 3rem;
@@ -41,13 +52,19 @@ i {
     --s-sm: 1rem;
     --s-xs: .7rem;
 
+    /* Max-width */
+
     --mw-lg: 70.25rem;
+
+    /* Border radius */
 
     --r-xl: 6.25rem;
     --r-lg: 2.5rem;
     --r-sm: 5px;
     
 }
+
+/* COMPONENTES */
 
 .text--xl {
     font: var(--f-heading-xl);
@@ -112,6 +129,7 @@ i {
 }
 
 .flex-column {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,7 +146,7 @@ i {
 }
 
 
-/* Header */
+/* HEADER */
 
 .header {
 
@@ -139,7 +157,7 @@ i {
 }
 
 
-/* Hero */
+/* HERO */
 
 .hero {
 
@@ -163,3 +181,39 @@ i {
 
     }
 }
+
+/* PRODUCTS */
+
+.products {
+
+    & .products__block {
+
+        flex-wrap: wrap;
+
+        & .products__slider {
+
+            flex: 1 0 350px;
+
+            & .product__card {
+
+                & img {
+                    max-width:300px;
+                }
+
+            }
+
+        }
+
+        & .products__text-block {
+            flex: 1 0 21.875rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+

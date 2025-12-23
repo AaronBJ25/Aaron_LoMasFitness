@@ -9,6 +9,7 @@
     <title>LoMás Fitness</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="header flex-row">
         <img class="header__logo" src="media/logo.svg" loading="lazy" alt="logo">
         <nav class="header__nav">
@@ -22,16 +23,39 @@
             </ul>
         </nav>
     </header>
+    <!-- /Header -->
+    <!-- Main -->
     <main>
+        <!-- Hero -->
         <section class="hero section">
             <div class="hero__background flex-column">
                 <div class="hero__block container flex-column">
                     <h1 class="text--xl">LoMás Fitness</h1>
                     <h4 class="text--sm">El lugar donde puedes depositar tu confianza en busca de una vida más activa y saludable</h4>
-                    <a href="servicios.html" class="btn btn--light">Sobre nosotros</a>
+                    <a href="sobre_nosotros.html" class="btn btn--light">Sobre nosotros</a>
                 </div>
             </div>
         </section>
+        <!-- /Hero -->
+        <!-- Products -->
+        <section class="products section">
+            <div class="products__block container flex-row">
+                <div class="products__text-block flex-column">
+                    <h2 class="text--lg">Nuestros productos</h2>
+                    <p>Aquí podrás disfrutar de una amplia variedad de productos, desde suplementos que te ayudarán en tus entrenamientos, hasta articulos con los que mostrar tu apoyo a esta familia</p>
+                    <a href="productos.html" class="btn btn--dark">Más productos</a>
+                </div>
+                <div class="products__slider">
+                    <div class="product__card flex-column">
+                        <h4 class="text--sm">Creatina 500g</h4>
+                        <img src="media/creatine_small.webp" alt="creatina_small">
+                        <span class="body">Bote de creatina de 500g </span>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!-- /Products -->
     </main>
+    <!-- /Main -->
 </body>
 </html>
