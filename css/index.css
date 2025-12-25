@@ -54,6 +54,7 @@ i {
 
     /* Max-width */
 
+    --mw-xl: 93.3vw;
     --mw-lg: 70.25rem;
 
     /* Border radius */
@@ -145,13 +146,23 @@ i {
     gap: var(--s-sm);
 }
 
-
 /* HEADER */
 
 .header {
 
+    max-width: var(--mw-xl);
+    margin: auto;
+
     & .header__logo {
         max-width: 9.375rem;
+    }
+
+    & .ri-menu-line {
+        display: none;
+    }
+
+    & .ri-close-large-line {
+        display: none;
     }
 
 }
@@ -196,8 +207,15 @@ i {
 
             & .product__card {
 
+                position: relative;
+
                 & img {
                     max-width:300px;
+                }
+
+                & span {
+                    position: absolute;
+                    bottom: var(--s-xl);
                 }
 
             }
@@ -211,7 +229,49 @@ i {
 }
 
 
+/* VERSIÓN DISPOSITIVOS MÓVILES */
 
+@media (max-width: 767px) {
+    .header {
+
+        & .header__nav {
+
+            & #menuBtn {
+                background: transparent;
+                border: none;
+                & i {
+                    display: block;
+                }      
+            }
+
+            & .menu__links {
+                display: none;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: var(--s-md);
+                text-align: center;
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+
+                &.show {
+                    display: flex;
+                    background-color: var(--c-light);
+
+                    & #closeBtn {
+                        background: transparent;
+                        border: none;
+                        & i {
+                            display: block;
+                        }      
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 
 

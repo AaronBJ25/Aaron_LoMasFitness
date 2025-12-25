@@ -12,8 +12,10 @@
     <!-- Header -->
     <header class="header flex-row">
         <img class="header__logo" src="media/logo.svg" loading="lazy" alt="logo">
-        <nav class="header__nav">
-            <ul class="flex-row">
+        <nav class="header__nav flex-row">
+            <button id="menuBtn" class="link"><i class="ri-menu-line"></i></button>  
+            <ul class="menu__links flex-row" id="menuLinks">
+                <button id="closeBtn" class="link"><i class="ri-close-large-line"></i></button>
                 <li><a href="index.html" class="link">Inicio</a></li>
                 <li><a href="productos.html" class="link">Productos </a></li>
                 <li><a href="servicios.html" class="link">Servicios</a></li>
@@ -47,7 +49,6 @@
                 </div>
                 <div class="products__slider">
                     <div class="product__card flex-column">
-                        <h4 class="text--sm">Creatina 500g</h4>
                         <img src="media/creatine_small.webp" alt="creatina_small">
                         <span class="body">Bote de creatina de 500g </span>
                     </div>
