@@ -11,17 +11,22 @@
 <body>
     <!-- Header -->
     <header class="header flex-row">
-        <img class="header__logo" src="media/logo.svg" loading="lazy" alt="logo">
+        <a href="index.html" title="Volver al inicio de la web">
+            <picture>
+                <source srcset="media/logo.svg" type="image/svg+xml">
+                <img class="header__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web">
+            </picture>
+        </a>
         <nav class="header__nav flex-row">
-            <button id="menuBtn" class="link"><i class="ri-menu-line"></i></button>  
+            <button id="menuBtn" class="link" title="Abrir menú lateral"><i class="ri-menu-line"></i></button>  
             <ul class="menu__links flex-row" id="menuLinks">
-                <button id="closeBtn" class="link"><i class="ri-close-large-line"></i></button>
-                <li><a href="index.html" class="link">Inicio</a></li>
-                <li><a href="productos.html" class="link">Productos </a></li>
-                <li><a href="#services" class="link">Servicios</a></li>
-                <li><a href="sobre_nosotros.html" class="link">Sobre nosotros</a></li>
-                <li><a href="contacto.html" class="link">Contacto</a></li>
-                <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
+                <button id="closeBtn" class="link" title="Cerrar menú lateral"><i class="ri-close-large-line"></i></button>
+                <li><a href="index.html" title="Enlace para volver al inicio de la web" class="link">Inicio</a></li>
+                <li><a href="productos.html" title="Enlace para ir a nuestra página de productos" class="link">Productos </a></li>
+                <li><a href="#services" title="Enlace para ir a nuestra sección de productos" class="link">Servicios</a></li>
+                <li><a href="#reviews" title="Enlace para ir a nuestra sección de reseñas" class="link">Reseñas</a></li>
+                <li><a href="contacto.html" title="Enlace para poder ponerte en contacto con nosotros" class="link">Contacto</a></li>
+                <li><a href="#" class="link" title="Ver el carrito de la compra"><i class="ri-shopping-cart-line"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -33,8 +38,8 @@
             <div class="hero__background flex-column">
                 <div class="hero__block container flex-column">
                     <h1 class="text--xl">LoMás Fitness</h1>
-                    <h4 class="text--sm">El lugar donde puedes depositar tu confianza en busca de una vida más activa y saludable</h4>
-                    <a href="sobre_nosotros.html" class="btn btn--light">Sobre nosotros</a>
+                    <p class="text--sm">El lugar donde puedes depositar tu confianza en busca de una vida más activa y saludable</p>
+                    <a href="sobre_nosotros.html" title="Ver más información sobre nosotros" class="btn btn--light">Sobre nosotros</a>
                 </div>
             </div>
         </section>
@@ -45,11 +50,14 @@
                 <div class="products__text-block flex-column">
                     <h2 class="text--lg">Nuestros productos</h2>
                     <p>Aquí podrás disfrutar de una amplia variedad de productos, desde suplementos que te ayudarán en tus entrenamientos, hasta articulos con los que mostrar tu apoyo a esta familia</p>
-                    <a href="productos.html" class="btn btn--dark">Más productos</a>
+                    <a href="productos.html" title="Ver más de nuestros productos" class="btn btn--dark">Más productos</a>
                 </div>
                 <div class="products__slider">
                     <div class="product__card flex-column">
-                        <img src="media/creatine_small.webp" alt="creatina_small">
+                        <picture>
+                            <source srcset="media/creatine_small.webp" type="image/webp">
+                            <img src="media/creatine_small.jpg" alt="creatina_small" loading="lazy">
+                        </picture>
                         <span class="body">Bote de creatina de 500g </span>
                     </div>
                 </div>    
@@ -64,25 +72,67 @@
                     <div class="services__card flex-column">
                         <h3 class="text--sm">Descubre nuestra sala de musculatura</h3>
                         <p>Si quieres esforzarte al máximo y demostrar tu máximo potencial, usa nuestra sala de musculatura</p>
-                        <img src="media/gym.webp" alt="gym">
-                        <a href="gym.html" class="btn btn--dark">Más información</a>
+                        <picture>
+                            <source srcset="media/gym.webp" type="image/webp">
+                            <img src="media/gym.jpg" alt="Sala de musculatura" loading="lazy">
+                        </picture>
+                        <a href="gym.html" class="btn btn--dark" title="Ver más información sobre nuestra sala de musculatura" target="_blank" rel="noreferrer">Más información</a>
                     </div>
                     <div class="services__card flex-column">
                         <h3 class="text--sm">Contamos con grandes profesionales</h3>
                         <p>Si eres nuevo en el mundo del gimnasio, tenemos un servicio de entrenamiento personal para ayudarte</p>
-                        <img src="media/personal_trainer.webp" alt="personal_trainer">
-                        <a href="personal_trainer.html" class="btn btn--dark">Más información</a>
+                        <picture>
+                            <source srcset="media/personal_trainer.webp" type="image/webp">
+                            <img src="media/personal_trainer.jpg" alt="Entrenador personal trabajando" loading="lazy">
+                        </picture>
+                        <a href="personal_trainer.html" title="Ver más información sobre nuestro servicio de entrenamiento personal" class="btn btn--dark" target="_blank" rel="noreferrer">Más información</a>
                     </div>
                     <div class="services__card flex-column">
                         <h3 class="text--sm">La alimentación es muy importante</h3>
                         <p>Si quieres progresar adecuadamente, puedes hablar con nuestros nutricionistas y planificar tu dieta</p>
-                        <img src="media/nutritionist.webp" alt="nutritionist">
-                        <a href="nutritionist.html" class="btn btn--dark">Más información</a>
+                        <picture>
+                            <source srcset="media/nutritionist.webp" type="image/webp">
+                            <img src="media/nutritionist.jpg" alt="Nutricionista preparada para atenderte" loading="lazy">
+                        </picture>
+                        <a href="nutritionist.html" class="btn btn--dark" title="Ver más información sobre nuestros expertos en nutricionismo" target="_blank" rel="noreferrer">Más información</a>
                     </div>
                 </div>         
             </div>
         </section>
         <!-- /Services -->
+        <!-- Reviews -->
+        <section id="reviews" class="reviews section">
+            <div class="reviews__block container flex-column">
+                <h2 class="text--lg">Esto es lo que algunos clientes opinan de nosotros</h2>
+                <div class="reviews__cards grid-container">
+                    <div class="reviews__card flex-column">
+                        <picture>
+                            <source srcset="media/client_juana.webp" type="image/webp">
+                            <img src="media/client_juana.jpg" alt="Perfil de Juana Gómez" loading="lazy">
+                        </picture>
+                        <h3 class="text--sm">Juana Gómez</h3>
+                        <p>En lo personal estoy muy contenta de haber escogido este gimnasio. Era mi primera vez estando en uno y el ambiente es genial. Además, al ser mi primera vez decidí usar el servicio de entrenamiento personal durante mis primeros meses y la verdad es que la chica que me llevaba los entrenamientos era muy amable, tuvo mucha paciencia y eso ayuda mucho a la hora de empezar. Ahora siempre que la veo por el gimansio ayudando a otras personas me acerco a ver que tal le va y sigue tratando a sus clientes de diez.</p>
+                    </div>
+                    <div class="reviews__card flex-column">
+                        <picture>
+                            <source srcset="media/client_pepe.webp" type="image/webp">
+                            <img src="media/client_pepe.jpg" alt="Perfil de Pepe Fernández" loading="lazy">
+                        </picture>
+                        <h3 class="text--sm">Pepe Fernández</h3>
+                        <p>Me apunté a este gimnasio ya que estaba cerca de el nuevo el piso al que me mudé hace ya tres años, y la verdad es que al instante me sorprendió. Las instalaciones están muy bien cuidadas, todas las máquinas están limpias, engrasadas, las mancuernas siempre están ordenadas, ya que si las dejas desordenadas y te pillan puede ser motivo de expulsión del gimnasio, si lo haces varias veces. Esta medida me parece genial ya que da mucha rabia cuando tienes que recorrerte todo el gimnasio para encontrar las mancuernas que vas a usar.</p>
+                    </div>
+                    <div class="reviews__card flex-column">
+                        <picture>
+                            <source srcset="media/client_joan.webp" type="image/webp">
+                            <img src="media/client_joan.jpg" alt="Perfil de Joan Martínez" loading="lazy">
+                        </picture>
+                        <h3 class="text--sm">Joan Martínez</h3>
+                        <p>Me gusta entrenar desde hace muchísimos años, llevo en este gimnasio prácticamente desde sus inicios y el servicio de nutricionismo que añadieron unos meses después de abrirlo me ayudó muchísimo, ya que nunca me había parado a pensar si realmente comía adecuadamente o no. Resulta que cuando visité a uno de los nutricionistas me dijo que si quería progresar más rápido y de una manera saludable, debía ajustar mi dieta para que me proporcionase más calorías, teniendo en cuenta por supuesto no abusar de las grasas. Tenía razón, empecé a progreasr mucho más rápido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Reviews -->
     </main>
     <!-- /Main -->
 </body>

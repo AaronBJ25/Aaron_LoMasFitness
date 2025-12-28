@@ -43,6 +43,7 @@ i {
 
     --c-text: #161616;
     --c-light: #f1eeee;
+    --c-secondary: #f8f8f8 ;
 
     /* Espacios */
 
@@ -59,8 +60,9 @@ i {
 
     /* Border radius */
 
-    --r-xl: 6.25rem;
-    --r-lg: 2.5rem;
+    --r-xl: 100%;
+    --r-lg: 6.25rem;
+    --r-md: 2.5rem;
     --r-sm: 7px;
     
 }
@@ -89,17 +91,22 @@ i {
 
 .link {
     font: var(--f-link);
+    transition: opacity .5s;
+
+    &:hover {
+        opacity: .7;
+    }
 }
 
 .btn {
     font: var(--f-link);
     padding: var(--s-xs) var(--s-md);
-    border-radius: var(--r-lg);
+    border-radius: var(--r-md);
     transition: transform .5s;
-}
 
-.btn:hover{
-    transform: scale(110%);
+    &:hover {
+        transform: scale(110%);
+    }
 }
 
 .btn--dark {
@@ -155,6 +162,11 @@ i {
 
     & .header__logo {
         max-width: 9.375rem;
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(110%);
+        }
     }
 
     & .header__nav {
@@ -244,10 +256,13 @@ i {
 .services {
     & .services__block {
         &.flex-column {
-            gap: var(--s-md);
+            gap: var(--s-xl);
         }
         & .services__cards {
             & .services__card {
+                &.flex-column{
+                    justify-content: space-between;
+                }
                 & img {
                     border-radius: var(--r-sm);
                 }
@@ -256,9 +271,38 @@ i {
     }
 }
 
+/* REVIEWS */
+
+.reviews {
+    & .reviews__block {
+        &.flex-column {
+            gap: var(--s-xl);
+        }
+        & .reviews__cards {
+            & .reviews__card {
+                background-color: var(--c-secondary);
+                border-radius: var(--r-sm);
+                &.flex-column {
+                    padding: var(--s-md);
+                }
+                & picture {
+                    & img {
+                        max-width: 12.5rem;
+                        border-radius: var(--r-xl);
+                    }
+                }
+                & p {
+                    text-align: justify;
+                }
+
+            } 
+        }
+    }
+}
+
 /* VERSIÓN DISPOSITIVOS MÓVILES */
 
-@media (max-width: 47.9375rem) {
+@media (max-width: 767px) {
     .header {
 
         & .header__nav {
