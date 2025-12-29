@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -184,6 +185,14 @@ i {
                 display: none;
             }      
         }
+        & #servicesBtn {
+            background: transparent;
+            border: none;      
+        }
+        & #reviewsBtn {
+            background: transparent;
+            border: none;      
+        }
     }
 
     
@@ -316,23 +325,29 @@ i {
             }
 
             & .menu__links {
+                font: var(--f-heading-md);
                 display: none;
                 flex-direction: column;
-                justify-content: flex-start;
-                gap: var(--s-md);
+                justify-content: space-between;
+                padding: var(--s-lg);
                 text-align: center;
                 position: fixed;
                 top: 0;
                 right: 0;
+                left: 0;
                 height: 100vh;
+
+                & li:first-of-type {
+                    align-self: flex-end;
+                }
 
                 &.show {
                     display: flex;
                     background-color: var(--c-light);
-
                     & #closeBtn {
                         background: transparent;
                         border: none;
+                        font-size: .7rem;
                         & i {
                             display: block;
                         }      
