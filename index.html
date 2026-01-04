@@ -52,7 +52,7 @@
                     <p>Aquí podrás disfrutar de una amplia variedad de productos, desde suplementos que te ayudarán en tus entrenamientos, hasta articulos con los que mostrar tu apoyo a esta familia</p>
                     <a href="productos.html" title="Ver más de nuestros productos" class="btn btn--dark">Más productos</a>
                 </div>
-                <div class="products__slider">
+                <div class="products__carrousel">
                     <div class="product__card flex-column">
                         <picture>
                             <source srcset="media/creatine_small.webp" type="image/webp">
@@ -133,7 +133,77 @@
             </div>
         </section>
         <!-- /Reviews -->
+        <!-- Contact -->
+        <section class="contact section">
+            <div class="contact__block container flex-column">
+                <h2 class="text--md">Contacta con nosotros</h2>
+                <div class="contact__form">
+                    <form action="#" method="post">
+                        <div class="contact__name flex-row">
+                            <label for="name" class="text--sm">Tu nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="contact__birth flex-row">
+                            <label for="birth" class="text--sm">Tu fecha de nacimiento</label>
+                            <input type="date" name="birth" id="birth" required>
+                        </div>
+                        <div class="contact__phone flex-row">
+                            <label for="phone" class="text--sm">Tu número de teléfono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="p. ej. 123456789" required>
+                        </div>
+                        <div class="contact__email flex-row">
+                            <label for="email" class="text--sm">Tu correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="p. ej. correo@dominio.com" required>
+                        </div>
+                        <div class="contact__services flex-column">
+                            <label for="form__service" class="text--sm">Seleccione un servicio</label>
+                            <p>Esto nos ayudará a proporcionarte información sobre el servicio que eligas. Si desea usar más de un servicio se añadirá a su factura como un extra. Si selecciona entrenamiento personal, se juntará automáticamente con la sala de musculatura</p>
+                            <select name="form__service" id="form__service">
+                                <option value="gym" selected>Sala de musculatura</option>
+                                <option value="personal_trainer">Entrenamiento personal</option>
+                                <option value="nutritionist">Nutricionista</option>
+                            </select>
+                        </div>
+                        <div class="contact__buttons flex-row">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /Contact -->
     </main>
     <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__block flex-column">
+            <div class="footer__links flex-row">
+                <a href="index.html" title="Volver al inicio de la web desde el footer">
+                    <picture>
+                        <source srcset="media/logo.svg" type="image/svg+xml">
+                        <img class="footer__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web desde el footer">
+                    </picture>
+                </a>
+                <ul class="flex-row">
+                    <li><a href="index.html" class="link" title="Enlace para volver al inicio de la web desde el footer">Inicio</a></li>
+                    <li><a href="productos.html" class="link" title="Enlace para ir a nuestra página de productos desde el footer">Productos</a></li>
+                    <li> <a href="#services" class="link" title="Enlace para ir a nuestra sección de servicios desde el footer">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="footer__social flex-row">
+                <ul class="flex-row">
+                    <li><a class="link" href="#"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a class="link" href="#"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a class="link"href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a class="link" href="#"><i class="ri-twitter-x-fill"></i></a></li>
+                </ul>
+                <div class="footer__copy">
+                    <span class="body">&copy; 2026 LoMás Fitness</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
 </body>
 </html>

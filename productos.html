@@ -9,18 +9,68 @@
     <title>LoMás Fitness - Productos</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="header flex-row">
-        <img class="header__logo" src="media/logo.svg" loading="lazy" alt="logo">
-        <nav class="header__nav">
-            <ul class="flex-row">
-                <li><a href="index.html" class="link">Inicio</a></li>
-                <li><a href="productos.html" class="link">Productos </a></li>
-                <li><a href="servicios.html" class="link">Servicios</a></li>
-                <li><a href="sobre_nosotros.html" class="link">Sobre nosotros</a></li>
-                <li><a href="contacto.html" class="link">Contacto</a></li>
-                <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
+        <a href="index.html" title="Volver al inicio de la web">
+            <picture>
+                <source srcset="media/logo.svg" type="image/svg+xml">
+                <img class="header__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web">
+            </picture>
+        </a>
+        <nav class="header__nav flex-row">
+            <button id="menuBtn" class="link" title="Abrir menú lateral"><i class="ri-menu-line"></i></button>  
+            <ul class="menu__links flex-row" id="menuLinks">
+                <li><button id="closeBtn" class="link" title="Cerrar menú lateral"><i class="ri-close-large-line"></i></button></li>
+                <li><a href="index.html" title="Enlace para volver al inicio de la web" class="link">Inicio</a></li>
+                <li><a href="productos.html" title="Enlace para ir a nuestra página de productos" class="link">Productos </a></li>
+                <li><button id="servicesBtn" class="link"><a href="#services" title="Enlace para ir a nuestra sección de productos">Servicios</a></button></li>
+                <li><button id="reviewsBtn" class="link"><a href="#reviews" title="Enlace para ir a nuestra sección de reseñas">Reseñas</a></button></li>
+                <li><a href="contacto.html" title="Enlace para poder ponerte en contacto con nosotros" class="link">Contacto</a></li>
+                <li><a href="#" class="link" title="Ver el carrito de la compra"><i class="ri-shopping-cart-line"></i></a></li>
             </ul>
         </nav>
     </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <!-- Hero -->
+        <section class="hero-secondary section">
+            <div class="hero-secondary__background hero--products flex-column">
+                <div class="hero-secondary__block container flex-column">
+                    
+                </div>
+            </div>
+        </section>
+        <!-- /Hero -->
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__block flex-column">
+            <div class="footer__links flex-row">
+                <a href="index.html" title="Volver al inicio de la web desde el footer">
+                    <picture>
+                        <source srcset="media/logo.svg" type="image/svg+xml">
+                        <img class="footer__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web desde el footer">
+                    </picture>
+                </a>
+                <ul class="flex-row">
+                    <li><a href="index.html" class="link" title="Enlace para volver al inicio de la web desde el footer">Inicio</a></li>
+                    <li><a href="productos.html" class="link" title="Enlace para ir a nuestra página de productos desde el footer">Productos</a></li>
+                    <li> <a href="#services" class="link" title="Enlace para ir a nuestra sección de servicios desde el footer">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="footer__social flex-row">
+                <ul class="flex-row">
+                    <li><a class="link" href="#"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a class="link" href="#"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a class="link"href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a class="link" href="#"><i class="ri-twitter-x-fill"></i></a></li>
+                </ul>
+                <div class="footer__copy">
+                    <span class="body">&copy; 2026 LoMás Fitness</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
 </body>
 </html>
