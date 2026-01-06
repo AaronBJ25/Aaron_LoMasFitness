@@ -34,13 +34,64 @@
     <!-- Main -->
     <!-- Hero -->
         <section class="hero-secondary section">
-            <div class="hero-secondary__background hero--products flex-column">
-                <div class="hero-secondary__block container flex-column">
-                    
+            <div class="hero-secondary__background hero--products flex-column"></div>
+        </section>
+    <!-- /Hero -->
+    <!-- Protein -->
+        <section class="protein section">
+            <div class="protein__block container flex-column">
+                <h2 class="text--lg">Proteína</h2>
+                <div class="slider">
+                    <div id="proteinSlider" class="slider__block flex-row">
+                        <div class="slide flex-column">
+                            <picture>
+                                <source srcset="media/protein_xsmall.webp" type="image/webp">
+                                <img class="protein-xsmall" src="media/protein_xsmall.jpg" loading="lazy" alt="Bote de proteína de 250 gramos">
+                            </picture>
+                            <span class="body slide__name">Proteína 250g</span>
+                            <span class="body slide__price">10,99 €</span>
+                        </div>
+                        <div class="slide flex-column">
+                            <picture>
+                                <source srcset="media/protein_small.webp" type="image/webp">
+                                <img class="protein-small" src="media/protein_small.jpg" loading="lazy" alt="Bote de proteína de 500 gramos">
+                            </picture>
+                            <span class="body slide__name">Proteína 500g</span>
+                            <span class="body slide__price">19,99 €</span>
+                        </div>
+                        <div class="slide flex-column">
+                            <picture>
+                                <source srcset="media/protein_medium.webp" type="image/webp">
+                                <img class="protein-medium" src="media/protein_medium.jpg" loading="lazy" alt="Bote de proteína de 1 kilogramo">
+                            </picture>
+                            <span class="body slide__name">Proteína 1kg</span>
+                            <span class="body slide__price">30,99 €</span>
+                        </div>
+                        <div class="slide flex-column">
+                            <picture>
+                                <source srcset="media/protein_large.webp" type="image/webp">
+                                <img class="protein-large" src="media/protein_large.jpg" loading="lazy" alt="Bote de proteína de 2 kilogramos">
+                            </picture>
+                            <span class="body slide__name">Proteína 2kg</span>
+                            <span class="body slide__price">60,99 €</span>
+                        </div>
+                        <div class="slide flex-column">
+                            <picture>
+                                <source srcset="media/protein_xlarge.webp" type="image/webp">
+                                <img class="protein-xlarge" src="media/protein_xlarge.jpg" loading="lazy" alt="Bote de proteína de 5 kilogramos">
+                            </picture>
+                            <span class="body slide__name">Proteína 5kg</span>
+                            <span class="body slide__price">124,99 €</span>
+                        </div>
+                    </div>        
+                </div>
+                <div class="slider__arrows flex-row">
+                    <button id="proteinPrevBtn"><i class="ri-arrow-left-line"></i></button>
+                    <button id="proteinNextBtn"><i class="ri-arrow-right-line"></i></button>
                 </div>
             </div>
         </section>
-        <!-- /Hero -->
+    <!-- /Protein -->
     <!-- /Main -->
     <!-- Footer -->
     <footer class="footer section">
@@ -55,7 +106,7 @@
                 <ul class="flex-row">
                     <li><a href="index.html" class="link" title="Enlace para volver al inicio de la web desde el footer">Inicio</a></li>
                     <li><a href="productos.html" class="link" title="Enlace para ir a nuestra página de productos desde el footer">Productos</a></li>
-                    <li> <a href="#services" class="link" title="Enlace para ir a nuestra sección de servicios desde el footer">Servicios</a></li>
+                    <li> <a href="contacto.html" class="link" title="Enlace para ir a nuestra página de contacto desde el footer">Contacto</a></li>
                 </ul>
             </div>
             <div class="footer__social flex-row">

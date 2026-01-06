@@ -232,7 +232,7 @@ i {
 .hero-secondary {
 
     &.section {
-        padding: 0 var(--s-sm);
+        padding: 0 var(--s-sm) var(--s-xl);
     }
     
     & .hero-secondary__background {
@@ -240,7 +240,7 @@ i {
         background-repeat: no-repeat;
         background-size: cover;
 
-        min-height: 63vh;
+        min-height: 45vh;
         border-radius: var(--r-sm); 
     }
 }
@@ -438,16 +438,76 @@ i {
 
             width: 100%;
 
-            & ul li {
-                & i {
-                    font-size: clamp(1.45em, 2vw, 1.9em)
+            & ul {
+
+                padding: var(--s-sm) 0;
+
+                & li {
+                    & i {
+                        font-size: clamp(1.45em, 2vw, 1.9em)
+                    }
                 }
+            } 
+        }
+    }
+}
+
+/* PRODUCTS PAGE */
+
+.protein {
+    background-color: var(--c-secondary);
+    & .protein__block {
+        overflow: hidden;
+        & .slider {
+            width: 100%;        
+            & .slider__block {
+                transition: transform 1.5s;
+                & .slide {
+                    min-width: 33%;
+                    &.flex-column {
+                        align-items: flex-start;
+                    }
+                    & img {
+                        max-width: 25rem;
+                        border-radius: var(--r-sm);
+                    }         
+                    & .slide__name {
+                        font-weight: 900;
+                    }
+                }
+            }
+            
+        }
+        & .slider__arrows {
+           
+            width: 50%;
+            justify-content: space-between;
+            
+        
+            & button {
+                background: transparent;
+                border: none;
             }
         }
     }
 }
 
 /* VERSIÓN DISPOSITIVOS MÓVILES */
+
+@media (max-width: 480px) {
+    .protein {
+        & .protein__block {
+            & .slider {            
+                & .slider__block {
+                    & .slide {
+                        min-width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
 
 @media (max-width: 767px) {
     .header {
