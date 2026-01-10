@@ -12,6 +12,7 @@
 
 img {
     width: 100%;
+    object-fit: cover;
 }
 
 a {
@@ -454,9 +455,9 @@ i {
 
 /* PRODUCTS PAGE */
 
-.protein {
+.product-section {
     background-color: var(--c-secondary);
-    & .protein__block {
+    & .product-block {
         overflow: hidden;
         & .slider {
             width: 100%;        
@@ -464,8 +465,10 @@ i {
                 transition: transform 1.5s;
                 & .slide {
                     min-width: 33%;
-                    &.flex-column {
-                        align-items: flex-start;
+                    & a {
+                        &.flex-column {
+                            align-items: flex-start;
+                        }
                     }
                     & img {
                         max-width: 25rem;
@@ -495,8 +498,8 @@ i {
 /* VERSIÓN DISPOSITIVOS MÓVILES */
 
 @media (max-width: 480px) {
-    .protein {
-        & .protein__block {
+    .product-section {
+        & .product-block {
             & .slider {            
                 & .slider__block {
                     & .slide {

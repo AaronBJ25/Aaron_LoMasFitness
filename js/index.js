@@ -5,9 +5,7 @@ const CLOSE__BTN = document.getElementById('closeBtn'); // Seleccionamos el bot�
 const SERVICES__BTN = document.getElementById('servicesBtn'); // Seleccionamos el enlace de servicios en el menú de navegación
 const REVIEWS__BTN = document.getElementById('reviewsBtn'); // Seleccionamos el enlace de reseñas en el menú de navegación
 const BODY = document.querySelector('body'); // Seleccionamos el body del documento
-const SLIDER = document.getElementById('proteinSlider') // Seleccionamos el slider de botes de proteína
-const PREV_BTN = document.getElementById('proteinPrevBtn') // Seleccionamos el botón de la flecha izquierda en el slider de botes de proteína
-const NEXT_BTN = document.getElementById('proteinNextBtn') // Seleccionamos el botón de la flecha derecha en el slider de botes de proteína
+
 
 //Variables
 
@@ -35,10 +33,3 @@ REVIEWS__BTN.addEventListener('click', () => { // Al hacer click en el enlace de
     closeMenu(); // Ejecutamos la función para cerrar el menú
 });
 
-NEXT_BTN.addEventListener('click', () => {
-    SLIDER.style.transform = 'translateX(-100%)'
-});
-
-PREV_BTN.addEventListener('click', () => {
-    SLIDER.style.transform = 'translateX(0%)'
-});
