@@ -5,13 +5,10 @@ const CLOSE__BTN = document.getElementById('closeBtn'); // Seleccionamos el bot�
 const SERVICES__BTN = document.getElementById('servicesBtn'); // Seleccionamos el enlace de servicios en el menú de navegación
 const REVIEWS__BTN = document.getElementById('reviewsBtn'); // Seleccionamos el enlace de reseñas en el menú de navegación
 const BODY = document.querySelector('body'); // Seleccionamos el body del documento
-const CART_BTN = document.getElementById('cartBtn')
-const ADD_PRODUCT_BTN = document.getElementById('addProductBtn')
-const HEADER = document.querySelector('.header')
+
 
 //Variables
-let counter = 1
-let rotation
+
 
 //Funciones
 MENU__BTN.addEventListener('click', () => { // Al hacer click en el botón de abrir el menú
@@ -35,11 +32,3 @@ SERVICES__BTN.addEventListener('click', () => { // Al hacer click en el enlace d
 REVIEWS__BTN.addEventListener('click', () => { // Al hacer click en el enlace de reseñas en el menú de navegación
     closeMenu(); // Ejecutamos la función para cerrar el menú
 });
-
-ADD_PRODUCT_BTN.addEventListener('click', () => {
-    rotation = counter * 360
-    HEADER.scrollIntoView()
-    CART_BTN.style.transition = '1s'
-    CART_BTN.style.rotate = `${rotation}deg`
-    counter++
-})
