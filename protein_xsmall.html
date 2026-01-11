@@ -6,8 +6,8 @@
     <meta name="description" content="En LoMás Fitness puedes encontrar una familia donde mejorar tus hábitos a través de nuestros servicios">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
-    <script defer src="js/products.js"></script>
-    <title>LoMás Fitness - Productos</title>
+    <script defer src="js/index.js"></script>
+    <title>LoMás Fitness - Proteína 250g</title>
 </head>
 <body>
     <!-- Header -->
@@ -27,63 +27,38 @@
                 <li><button id="servicesBtn" class="menu__link link"><a href="#services" title="Enlace para ir a nuestra sección de productos">Servicios</a></button></li>
                 <li><button id="reviewsBtn" class="menu__link link"><a href="#reviews" title="Enlace para ir a nuestra sección de reseñas">Reseñas</a></button></li>
                 <li><a href="contacto.html" title="Enlace para poder ponerte en contacto con nosotros" class="menu__link link">Contacto</a></li>
-                <li><a href="#" class="menu__link link" title="Ver el carrito de la compra"><i class="ri-shopping-cart-line"></i></a></li>
+                <li id="cartBtn"><a href="carrito.html" class="menu__link link" title="Ver el carrito de la compra"><i class="ri-shopping-cart-line"></i></a></li>
             </ul>
         </nav>
     </header>
     <!-- /Header -->
     <!-- Main -->
-    <!-- Hero -->
-        <section class="hero-secondary section">
-            <div class="hero-secondary__background flex-column">
-                <div class="hero-secondary__block container">
-                    <h1 class="text--xl">Productos</h1>
+    <section class="product section">
+        <div class="product__block container flex-row">
+            <div class="product__image flex-column">
+                <picture>
+                    <source src="media/protein_xsmall.webp" type="image/webp">
+                    <img src="media/protein_xsmall.jpg" alt="Bote de proteína de 250 gramos" loading="lazy">
+                </picture>
+            </div>
+            <div class="product__info flex-column">
+                <div class="product__header flex-column">
+                    <h1 class="product__name text--sm">Proteína 250g</h1>
+                    <span class="product__price body">10,99 €</span>
+                </div>
+                <div class="product__size flex-row">
+                    <a href="protein_xsmall.html" class="product__link btn btn--dark" title="Bote de proteína de 250g">250g</a>
+                    <a href="protein_small.html" class="product__link btn btn--dark" title="Bote de proteína de 500g">500g</a>
+                    <a href="protein_medium.html" class="product__link btn btn--dark" title="Bote de proteína de 1kg">1kg</a>
+                    <a href="protein_large.html" class="product__link btn btn--dark" title="Bote de proteína de 2kg">2kg</a>
+                    <a href="protein_xlarge.html" class="product__link btn btn--dark" title="Bote de proteína de 5kg">5kg</a>
+                </div>
+                <div class="product__cart flex-row">
+                    <button id="addProductBtn" class="btn btn--light">Añadir a la cesta</button>
                 </div>
             </div>
-        </section>
-    <!-- /Hero -->
-    <!-- Protein -->
-        <section class="protein product-section section">
-            <div class="protein__block product-block container flex-column">
-                <h2 class="text--lg">Proteína</h2>
-                <div class="slider">
-                    <div class="slider__block flex-row"></div>        
-                </div>
-                <div class="slider__arrows flex-row">
-                    <button class="prevBtn"><i class="ri-arrow-left-line"></i></button>
-                    <button class="nextBtn"><i class="ri-arrow-right-line"></i></button>
-                </div>
-            </div>
-        </section>
-    <!-- /Protein -->
-    <!-- Creatine -->
-        <section class="creatine product-section section">
-            <div class="creatine__block product-block container flex-column">
-                <h2 class="text--lg">Creatina</h2>
-                <div class="slider">
-                    <div class="slider__block flex-row"></div>        
-                </div>
-                <div class="slider__arrows flex-row">
-                    <button class="prevBtn"><i class="ri-arrow-left-line"></i></button>
-                    <button class="nextBtn"><i class="ri-arrow-right-line"></i></button>
-                </div>
-            </div>
-        </section>
-    <!-- /Creatine -->
-    <!-- Merchandising-->
-        <section class="merchandising product-section section">
-            <div class="merchandising__block product-block container flex-column">
-                <h2 class="text--lg">Merchandising</h2>
-                <div class="slider">
-                    <div class="slider__block flex-row"></div>        
-                </div>
-                <div class="slider__arrows flex-row">
-                    <button class="prevBtn"><i class="ri-arrow-left-line"></i></button>
-                    <button class="nextBtn"><i class="ri-arrow-right-line"></i></button>
-                </div>
-            </div>
-        </section>
-    <!-- /Merchandising-->
+        </div>
+    </section>
     <!-- /Main -->
     <!-- Footer -->
     <footer class="footer section">

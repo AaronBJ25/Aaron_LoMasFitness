@@ -45,6 +45,7 @@ i {
     /* Colores */
 
     --c-text: #161616;
+    --c-white: #ffffff;
     --c-light: #f1eeee;
     --c-secondary: #f8f8f8 ;
 
@@ -232,29 +233,23 @@ i {
 
 .hero-secondary {
 
+    color: var(--c-light);
+
     &.section {
         padding: 0 var(--s-sm) var(--s-xl);
     }
     
     & .hero-secondary__background {
+        background: linear-gradient(
+        rgba(0,0,0,.6)),  url('../media/secondary_banner.webp');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
 
         min-height: 45vh;
-        border-radius: var(--r-sm); 
+        border-radius: var(--r-sm);        
     }
 }
-
-.hero--products {
-    background: url('../media/products_banner.webp');
-}
-
-.hero--contact {
-    background: url('../media/contact_banner.webp');
-}
-
-
 
 /* PRODUCTS */
 
@@ -455,6 +450,21 @@ i {
 
 /* PRODUCTS PAGE */
 
+/* HEADING */
+
+.heading {
+
+    &.section {
+        padding: 0 var(--s-sm) var(--s-xl);
+    }
+
+    & h1 {
+        text-align: center;
+    }
+}
+
+/* PRODUCT */
+
 .product-section {
     background-color: var(--c-secondary);
     & .product-block {
@@ -490,6 +500,51 @@ i {
             & button {
                 background: transparent;
                 border: none;
+            }
+        }
+    }
+}
+
+/* INDIVIDUAL PRODUCT PAGE */
+
+& .product {
+    background-color: var(--c-secondary);
+    & .product__block {
+        flex-wrap: wrap;
+        & .product__image {
+            flex: 3.75 0 15.625rem;
+            & img {
+                max-width: 300px;
+                border-radius: var(--r-sm);
+            }
+        }
+        & .product__info {
+            flex: 3.75 0 15.625rem;
+            & .product__header {
+                align-self: self-start;
+                &.flex-column {
+                    align-items: start;
+                }
+                & .product__price {
+                    font-weight: bold;
+                }
+            }
+
+            & .product__size {
+                flex-wrap: wrap;
+                &.flex-row {
+                    justify-content: start;
+                }
+
+                & .product__link {
+                    flex: 1 1 7.5rem;
+                }
+            }
+
+            & .product__cart {
+                & #addProductBtn {
+                    background: var(--c-white);
+                }
             }
         }
     }
