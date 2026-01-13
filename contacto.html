@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En LoMás Fitness puedes encontrar una familia donde mejorar tus hábitos a través de nuestros servicios">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
+    <script defer src="js/index.js"></script>
+    <title>LoMás Fitness - Contacto</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header flex-row">
+        <a href="index.html" title="Volver al inicio de la web">
+            <picture>
+                <source srcset="media/logo.svg" type="image/svg+xml">
+                <img class="header__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web">
+            </picture>
+        </a>
+        <nav class="header__nav flex-row">
+            <button id="menuBtn" class="link" title="Abrir menú lateral"><i class="ri-menu-line"></i></button>  
+            <ul class="menu__links flex-row" id="menuLinks">
+                <li><button id="closeBtn" class="close-btn link" title="Cerrar menú lateral"><i class="ri-close-large-line"></i></button></li>
+                <li><a href="index.html" title="Enlace para volver al inicio de la web" class="link">Inicio</a></li>
+                <li><a href="productos.html" title="Enlace para ir a nuestra página de productos" class="link">Productos </a></li>
+                <li><button id="servicesBtn" class="link"><a href="#services" title="Enlace para ir a nuestra sección de productos">Servicios</a></button></li>
+                <li><button id="reviewsBtn" class="link"><a href="#reviews" title="Enlace para ir a nuestra sección de reseñas">Reseñas</a></button></li>
+                <li><a href="contacto.html" title="Enlace para poder ponerte en contacto con nosotros" class="link">Contacto</a></li>
+                <li id="cartBtn"><a href="carrito.html" class="link" title="Ver el carrito de la compra"><i class="ri-shopping-cart-line"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section class="hero-secondary section">
+            <div class="hero-secondary__background flex-column">
+                <div class="hero-secondary__block container">
+                    <h1 class="text--xl">Contacto</h1>
+                </div>
+            </div>
+        </section>
+        <!-- /Hero -->
+        <!-- Contact -->
+        <section class="contact section">
+            <div class="contact__block container flex-column">
+                <div class="contact__location flex-row">
+                    <div class="contact__text-block flex-column">
+                        <h2 class="text--md">Dónde encontrarnos</h2>
+                        <p>Localízanos a través de este mapa para saber la ubicación del sitio en el que podrás crear la mejor versión de ti mismo.</p>
+                        <p>Si quieres obtener información rápida sobre algún aspecto de nuestras instalaciones, puedes escribir un correo a <a class="link" href="mailto:lomasfitness_recepcion@lmf.es">lomasfitness_recepcion@lmf.es</a>. Si quieres información más detallada deberás rellenar el formulario a continuación.</p>
+                    </div>
+                    <div class="contact__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98646.97135799352!2d-0.4439117887764334!3d39.40788882477883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1768241641186!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact__form flex-column">
+                    <h2 class="text--md">Contacta con nosotros</h2>
+                    <form action="#" method="post">
+                        <div class="contact__name flex-row">
+                            <label for="name" class="text--sm">Tu nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="contact__birth flex-row">
+                            <label for="birth" class="text--sm">Tu fecha de nacimiento</label>
+                            <input type="date" name="birth" id="birth" required>
+                        </div>
+                        <div class="contact__phone flex-row">
+                            <label for="phone" class="text--sm">Tu número de teléfono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="p. ej. 123456789" required>
+                         </div>
+                        <div class="contact__email flex-row">
+                            <label for="email" class="text--sm">Tu correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="p. ej. correo@dominio.com" required>
+                        </div>
+                        <div class="contact__services flex-column">
+                            <label for="form__service" class="text--sm">Seleccione un servicio</label>
+                            <p>Esto nos ayudará a proporcionarte información sobre el servicio que eligas. Si desea usar más de un servicio se añadirá a su factura como un extra. Si selecciona entrenamiento personal, se juntará automáticamente con la sala de musculatura</p>
+                            <select name="form__service" id="form__service">
+                                <option value="gym" selected>Sala de musculatura</option>
+                                <option value="personal_trainer">Entrenamiento personal</option>
+                                <option value="nutritionist">Nutricionista</option>
+                            </select>
+                        </div>
+                        <div class="contact__buttons flex-row">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /Contact -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__block flex-column">
+            <div class="footer__links flex-row">
+                <a href="index.html" title="Volver al inicio de la web desde el footer">
+                    <picture>
+                        <source srcset="media/logo.svg" type="image/svg+xml">
+                        <img class="footer__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web desde el footer">
+                    </picture>
+                </a>
+                <ul class="flex-row">
+                    <li><a href="index.html" class="link" title="Enlace para volver al inicio de la web desde el footer">Inicio</a></li>
+                    <li><a href="productos.html" class="link" title="Enlace para ir a nuestra página de productos desde el footer">Productos</a></li>
+                    <li> <a href="contacto.html" class="link" title="Enlace para ir a nuestra página de contacto desde el footer">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__social flex-row">
+                <ul class="flex-row">
+                    <li><a class="link" href="https://www.youtube.com/channel/UCF30QJNuAwfODaEH6VgB9Zw" target="_blank" rel="noreferrer" title="Canal de Youtube de LoMás Fitness"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a class="link" href="https://www.instagram.com/lomasfitness_oficial" target="_blank" rel="noreferrer" title="Instagram de LoMás Fitness"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a class="link" href="https://www.facebook.com/profile.php?id=61586266416811" target="_blank" rel="noreferrer" title="Facebook de LoMás Fitness"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a class="link" href="https://x.com/lomas_fitness" target="_blank" rel="noreferrer" title="Twitter de LoMás Fitness"><i class="ri-twitter-x-fill"></i></a></li>
+                </ul>
+                <div class="footer__copy">
+                    <span class="body">&copy; 2026 LoMás Fitness</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+</body>
+</html>

@@ -155,8 +155,7 @@ i {
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(19.375rem, 1fr));
     gap: var(--s-sm);
 }
 
@@ -268,12 +267,14 @@ i {
                 position: relative;
 
                 & img {
-                    max-width:300px;
+                    max-width: 18.75rem;
+                    transition: opacity 1s;
                 }
 
                 & span {
                     position: absolute;
-                    bottom: var(--s-xl);
+                    bottom: var(--s-lg);
+                    transition: opacity 1s;
                 }
 
             }
@@ -350,6 +351,8 @@ i {
 
         & .contact__form {
 
+            gap: var(--s-xl);
+
             & form {
 
                 flex-wrap: wrap;
@@ -377,7 +380,7 @@ i {
                 & .contact__buttons {
                     
                     & input[type="submit"], input[type="reset"] {
-                        background-color: #ffffff;
+                        background-color: var(--c-white);
                         font: var(--f-link);
                         padding: var(--s-xs) var(--s-md);
                         border-radius: var(--r-md);
@@ -391,6 +394,28 @@ i {
 
             }
 
+        }
+
+        & .contact__location {
+            flex-wrap: wrap;
+            & .contact__text-block {
+                flex: 1 0 15.625rem;
+                text-align: justify;
+                & h2 {
+                    text-align: center;
+                }       
+                & a {
+                    font-weight: bold;
+                    font-size: 1em;
+                }
+            }
+            & .contact__map {
+                flex: 1 0 15.625rem;
+
+                & iframe {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }
@@ -550,9 +575,55 @@ i {
     }
 }
 
+/* GYM */
+
+.gym {
+    background-color: var(--c-secondary);
+    & .gym__block {
+        & .gym__info {
+            flex-wrap: wrap;
+            justify-content: center;
+            & .gym__text-block {
+                flex: 1 0 15.625rem;
+            }
+
+            & .gym__image {
+                flex: 1 0 15.625rem;
+            }
+        }
+    }
+    
+}
+
+/* VERSIÓN DISPOSITIVOS MÓVILES MUY PEQUEÑOS */
+
+@media (max-width: 360px) {
+
+    .header {
+        & .header__logo {
+            max-width: 100px;
+        }
+    }
+
+    .footer {
+        & .footer__block {
+            &.flex-column {
+                gap: 0;
+            }
+            & .footer__links, .footer__social {
+                &.flex-row {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
 /* VERSIÓN DISPOSITIVOS MÓVILES */
 
 @media (max-width: 480px) {
+
     .product-section {
         & .product-block {
             & .slider {            
@@ -566,6 +637,8 @@ i {
         }
     }
 }
+
+/* VERSIÓN DISPOSITIVOS MEDIANOS */
 
 @media (max-width: 767px) {
     .header {
@@ -617,6 +690,30 @@ i {
     .hero {
         & .hero__background {
             background-attachment: scroll;
+        }
+    }
+
+    .contact {
+        & .contact__block {
+            & .contact__form {
+                & form {
+                    & .contact__name, .contact__birth, .contact__phone, .contact__email{
+                        &.flex-row {
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                    }
+
+                    & input, select {
+                        width: 100%;
+                    }
+
+                    & .contact__services {
+                        text-align: justify;
+                    }
+
+                }
+            }
         }
     }
 }

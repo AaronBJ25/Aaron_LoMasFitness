@@ -32,8 +32,8 @@ const PRODUCTS__DATA = [ // Estructura preguntada a la IA. Explicado en la memor
         sectionName: 'creatine',
         products: [
             {
-                source: 'media/creatine_xsmall.webp', image: 'media/creatine_xsmall.jpg', alt: 'Bote de creatina de 250 gramos', 
-                name: 'Creatina 250g', price: '13,99 €', href: 'creatine_xsmall.html'
+                source: 'media/creatine_xsmall.webp', image: 'media/creatine_xsmall.jpg', alt: 'Bote de creatina de 300 gramos', 
+                name: 'Creatina 300g', price: '13,99 €', href: 'creatine_xsmall.html'
             },
             {
                 source: 'media/creatine_small.webp', image: 'media/creatine_small.jpg', alt: 'Bote de creatina de 500 gramos',

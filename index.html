@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
     <script defer src="js/index.js"></script>
-    <title>LoMás Fitness</title>
+    <script defer src="js/products_carrousel.js"></script>
+    <title>LoMás Fitness - Inicio</title>
 </head>
 <body>
     <!-- Header -->
@@ -56,10 +57,10 @@
                 <div class="products__carrousel">
                     <div class="product__card flex-column">
                         <picture>
-                            <source srcset="media/creatine_small.webp" type="image/webp">
-                            <img src="media/creatine_small.jpg" alt="creatina_small" loading="lazy">
+                            <source id="rotativeSource" srcset="media/creatine_small.webp" type="image/webp">
+                            <img id="rotativeImage" src="media/creatine_small.jpg" alt="creatina_small" loading="lazy">
                         </picture>
-                        <span class="body">Bote de creatina de 500g </span>
+                        <span id="rotativeDesc" class="body">Bote de creatina de 500g </span>
                     </div>
                 </div>    
             </div>
@@ -95,7 +96,7 @@
                             <source srcset="media/nutritionist.webp" type="image/webp">
                             <img src="media/nutritionist.jpg" alt="Nutricionista preparada para atenderte" loading="lazy">
                         </picture>
-                        <a href="nutritionist.html" class="btn btn--dark" title="Ver más información sobre nuestros expertos en nutricionismo" target="_blank" rel="noreferrer">Informate y haz el cambio</a>
+                        <a href="nutritionist.html" class="btn btn--dark" title="Ver más información sobre nuestros expertos en nutricionismo" target="_blank" rel="noreferrer">Infórmate y haz el cambio</a>
                     </div>
                 </div>         
             </div>
@@ -137,8 +138,8 @@
         <!-- Contact -->
         <section class="contact section">
             <div class="contact__block container flex-column">
-                <h2 class="text--md">Contacta con nosotros</h2>
-                <div class="contact__form">
+                <div class="contact__form flex-column">
+                    <h2 class="text--md">Contacta con nosotros</h2>
                     <form action="#" method="post">
                         <div class="contact__name flex-row">
                             <label for="name" class="text--sm">Tu nombre</label>
@@ -194,10 +195,10 @@
             </div>
             <div class="footer__social flex-row">
                 <ul class="flex-row">
-                    <li><a class="link" href="https://www.youtube.com/channel/UCF30QJNuAwfODaEH6VgB9Zw" target="_blank" rel="norreferer"><i class="ri-youtube-fill"></i></a></li>
-                    <li><a class="link" href="https://www.instagram.com/lomasfitness_oficial" target="_blank" rel="norreferer"><i class="ri-instagram-fill"></i></a></li>
-                    <li><a class="link"href="https://www.facebook.com/profile.php?id=61586266416811" target="_blank" rel="norreferer"><i class="ri-facebook-fill"></i></a></li>
-                    <li><a class="link" href="https://x.com/lomas_fitness" target="_blank" rel="norreferer"><i class="ri-twitter-x-fill"></i></a></li>
+                    <li><a class="link" href="https://www.youtube.com/channel/UCF30QJNuAwfODaEH6VgB9Zw" target="_blank" rel="noreferrer" title="Canal de Youtube de LoMás Fitness"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a class="link" href="https://www.instagram.com/lomasfitness_oficial" target="_blank" rel="noreferrer" title="Instagram de LoMás Fitness"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a class="link" href="https://www.facebook.com/profile.php?id=61586266416811" target="_blank" rel="noreferrer" title="Facebook de LoMás Fitness"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a class="link" href="https://x.com/lomas_fitness" target="_blank" rel="noreferrer" title="Twitter de LoMás Fitness"><i class="ri-twitter-x-fill"></i></a></li>
                 </ul>
                 <div class="footer__copy">
                     <span class="body">&copy; 2026 LoMás Fitness</span>

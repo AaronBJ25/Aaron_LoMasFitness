@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En LoMás Fitness puedes encontrar una familia donde mejorar tus hábitos a través de nuestros servicios">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
+    <script defer src="js/index.js"></script>
+    <title>LoMás Fitness - Entrenador personal</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header flex-row">
+        <a href="index.html" title="Volver al inicio de la web">
+            <picture>
+                <source srcset="media/logo.svg" type="image/svg+xml">
+                <img class="header__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web">
+            </picture>
+        </a>
+        <nav class="header__nav flex-row">
+            <button id="menuBtn" class="link" title="Abrir menú lateral"><i class="ri-menu-line"></i></button>  
+            <ul class="menu__links flex-row" id="menuLinks">
+                <li><button id="closeBtn" class="close-btn link" title="Cerrar menú lateral"><i class="ri-close-large-line"></i></button></li>
+                <li><a href="index.html" title="Enlace para volver al inicio de la web" class="link">Inicio</a></li>
+                <li><a href="productos.html" title="Enlace para ir a nuestra página de productos" class="link">Productos </a></li>
+                <li><button id="servicesBtn" class="link"><a href="#services" title="Enlace para ir a nuestra sección de productos">Servicios</a></button></li>
+                <li><button id="reviewsBtn" class="link"><a href="#reviews" title="Enlace para ir a nuestra sección de reseñas">Reseñas</a></button></li>
+                <li><a href="contacto.html" title="Enlace para poder ponerte en contacto con nosotros" class="link">Contacto</a></li>
+                <li id="cartBtn"><a href="carrito.html" class="link" title="Ver el carrito de la compra"><i class="ri-shopping-cart-line"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section class="hero-secondary section">
+            <div class="hero-secondary__background flex-column">
+                <div class="hero-secondary__block container">
+                    <h1 class="text--lg">Entrenador personal</h1>
+                </div>
+            </div>
+        </section>
+        <!-- /Hero -->
+        <section class="gym section">
+            <div class="gym__block container flex-column">
+                <h2 class="text--lg">Contamos con grandes profesionales</h2>
+                <div class="gym__info flex-row">
+                    <div class="gym__text-block flex-column">
+                        <p>Para ayudarte en tu proceso, tanto si eres principiante, como si ya llevas tiempo en el mundo del gimnasio, contamos con un equipo de personal cualificado en el cual podrás confiar.</p>
+                        <p>Siempre está bien tener a alguien al lado en tus entrenamientos que te pueda dar una opinión objetiva sobre el esfuerzo que estás realizando.</p>
+                    </div>
+                    <div class="gym__image flex-column">
+                        <picture>
+                            <source srcset="media/personal_trainer.webp" type="image/webp">
+                            <img src="media/personal_trainer.jpg" alt="Entrenador personal trabajando" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__block flex-column">
+            <div class="footer__links flex-row">
+                <a href="index.html" title="Volver al inicio de la web desde el footer">
+                    <picture>
+                        <source srcset="media/logo.svg" type="image/svg+xml">
+                        <img class="footer__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web desde el footer">
+                    </picture>
+                </a>
+                <ul class="flex-row">
+                    <li><a href="index.html" class="link" title="Enlace para volver al inicio de la web desde el footer">Inicio</a></li>
+                    <li><a href="productos.html" class="link" title="Enlace para ir a nuestra página de productos desde el footer">Productos</a></li>
+                    <li> <a href="contacto.html" class="link" title="Enlace para ir a nuestra página de contacto desde el footer">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__social flex-row">
+                <ul class="flex-row">
+                    <li><a class="link" href="https://www.youtube.com/channel/UCF30QJNuAwfODaEH6VgB9Zw" target="_blank" rel="noreferrer" title="Canal de Youtube de LoMás Fitness"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a class="link" href="https://www.instagram.com/lomasfitness_oficial" target="_blank" rel="noreferrer" title="Instagram de LoMás Fitness"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a class="link" href="https://www.facebook.com/profile.php?id=61586266416811" target="_blank" rel="noreferrer" title="Facebook de LoMás Fitness"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a class="link" href="https://x.com/lomas_fitness" target="_blank" rel="noreferrer" title="Twitter de LoMás Fitness"><i class="ri-twitter-x-fill"></i></a></li>
+                </ul>
+                <div class="footer__copy">
+                    <span class="body">&copy; 2026 LoMás Fitness</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+</body>
+</html>
