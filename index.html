@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En LoMás Fitness puedes encontrar una familia donde mejorar tus hábitos a través de nuestros servicios">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aaronbj25.github.io/Aaron_LoMasFitness/" />
+    <meta property="og:title" content="LoMás Fitness" />
+    <meta property="og:description" content="En LoMás Fitness puedes encontrar una familia donde mejorar tus hábitos a través de nuestros servicios" />
+    <meta property="og:image" content="https://aaronbj25.github.io/Aaron_LoMasFitness/media/preview.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://aaronbj25.github.io/Aaron_LoMasFitness/" />
+    <meta property="twitter:title" content="LoMás Fitness" />
+    <meta property="twitter:description" content="En LoMás Fitness puedes encontrar una familia donde mejorar tus hábitos a través de nuestros servicios" />
+    <meta property="twitter:image" content="https://aaronbj25.github.io/Aaron_LoMasFitness/media/preview.jpg" />
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
     <script defer src="js/index.js"></script>
+    <script defer src="js/sections.js"></script>
     <script defer src="js/products_carrousel.js"></script>
     <title>LoMás Fitness - Inicio</title>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header: Contiene el logo, el menú de navegación y el carrito de la compra-->
     <header class="header flex-row">
         <a href="index.html" title="Volver al inicio de la web">
             <picture>
                 <source srcset="media/logo.svg" type="image/svg+xml">
-                <img class="header__logo" src="media/logo.jpg" loading="lazy" alt="Ir al inicio de la web">
+                <img class="header__logo" src="media/logo.jpg" alt="Ir al inicio de la web">
             </picture>
         </a>
         <nav class="header__nav flex-row">
@@ -25,17 +39,31 @@
                 <li><button id="closeBtn" class="close-btn link" title="Cerrar menú lateral"><i class="ri-close-large-line"></i></button></li>
                 <li><a href="index.html" title="Enlace para volver al inicio de la web" class="menu__link link">Inicio</a></li>
                 <li><a href="productos.html" title="Enlace para ir a nuestra página de productos" class="menu__link link">Productos </a></li>
-                <li><button id="servicesBtn" class="menu__link link"><a href="#services" title="Enlace para ir a nuestra sección de productos">Servicios</a></button></li>
-                <li><button id="reviewsBtn" class="menu__link link"><a href="#reviews" title="Enlace para ir a nuestra sección de reseñas">Reseñas</a></button></li>
+                <li><button id="servicesBtn" class="menu__link link" title="Botón para ir a nuestra sección de servicios">Servicios</button></li>
+                <li><button id="reviewsBtn" class="menu__link link" title="Botón para ir a nuestra sección de reseñas">Reseñas</button></li>
                 <li><a href="contacto.html" title="Enlace para poder ponerte en contacto con nosotros" class="menu__link link">Contacto</a></li>
-                <li><a href="#" class="menu__link link" title="Ver el carrito de la compra"><i class="ri-shopping-cart-line"></i></a></li>
+                <li><button id="cartBtn" class="link" title="Botón para abrir el carrito"><i class="ri-shopping-cart-line"></i></button></li>
+                <li><span class="red-dot"></span></li>
             </ul>
         </nav>
+        <div id="cartPreview" class="cart-preview">
+            <div class="cart-preview__block container flex-column">
+                <div class="cart-preview__heading flex-row">
+                    <h2 class="text--xs">Mi carrito</h2>
+                    <button id="closeCartBtn" class="close-cart link" title="Cerrar carrito desplegable"><i class="ri-close-line"></i></button>
+                </div>
+                <div class="cart-preview__cards"></div>
+                <div class="cart-preview__link flex-column">
+                    <a href="cart.html" class="btn btn--dark" title="Ver el carrito de la compra">Ver el carrito completo</a>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- /Header -->
-    <!-- Main -->
+    <div id="blackLayer"></div> <!-- Capa oscurecida al abrir el menú -->
+    <!-- Main: Contiene el contenido principal de la página -->
     <main>
-        <!-- Hero -->
+        <!-- Hero: Contiene el título de la página, un texto descriptivo y un enlace a la página de contacto -->
         <section class="hero section">
             <div class="hero__background flex-column">
                 <div class="hero__block container flex-column">
@@ -46,7 +74,7 @@
             </div>
         </section>
         <!-- /Hero -->
-        <!-- Products -->
+        <!-- Products: Contiene un carrousel de productos destacados -->
         <section class="products section">
             <div class="products__block container flex-row">
                 <div class="products__text-block flex-column">
@@ -66,7 +94,7 @@
             </div>
         </section>
         <!-- /Products -->
-        <!-- Services -->
+        <!-- Services: Contiene un resumen de cada uno de los servicios -->
         <section id="services" class="services section">
             <div class="services__block container flex-column">
                 <h2 class="text--lg">Disfruta de nuestros servicios</h2>
@@ -102,7 +130,7 @@
             </div>
         </section>
         <!-- /Services -->
-        <!-- Reviews -->
+        <!-- Reviews: Contiene opiniones de algunos de los usuarios -->
         <section id="reviews" class="reviews section">
             <div class="reviews__block container flex-column">
                 <h2 class="text--lg">Esto es lo que algunos clientes opinan de nosotros</h2>
@@ -135,12 +163,12 @@
             </div>
         </section>
         <!-- /Reviews -->
-        <!-- Contact -->
+        <!-- Contact: Contiene un formulario-->
         <section class="contact section">
             <div class="contact__block container flex-column">
                 <div class="contact__form flex-column">
                     <h2 class="text--md">Contacta con nosotros</h2>
-                    <form action="#" method="post">
+                    <form action="error.html" method="get">
                         <div class="contact__name flex-row">
                             <label for="name" class="text--sm">Tu nombre</label>
                             <input type="text" id="name" name="name" placeholder="Nombre completo" required>
@@ -177,7 +205,7 @@
         <!-- /Contact -->
     </main>
     <!-- /Main -->
-    <!-- Footer -->
+    <!-- Footer: Contiene el logo, una serie de enlaces a páginas de la web y enlaces a las redes sociales de la empresa -->
     <footer class="footer section">
         <div class="footer__block flex-column">
             <div class="footer__links flex-row">
