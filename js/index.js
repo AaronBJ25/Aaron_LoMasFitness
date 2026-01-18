@@ -1,3 +1,4 @@
+(() => {
 // Constantes
 const MENU_BTN = document.getElementById('menuBtn'); // Seleccionamos el botón que nos permite abrir el menú
 const MENU = document.getElementById('menuLinks'); // Seleccionamos el menú de navegación
@@ -9,50 +10,50 @@ const CART_RED_DOT = document.querySelector('.red-dot') // Seleccionamos el punt
 const CART_PREVIEW_CARDS = document.querySelector('.cart-preview__cards'); // Seleccionamos el bloque que contiene cada producto en el carrito
 const CART_PREVIEW_BTN = document.getElementById('cartBtn'); // Seleccionamos el botón que nos permite abrir el carrito
 const CLOSE_CART_BTN = document.getElementById('closeCartBtn'); // Seleccionamos el botón que nos permite cerrar el carrito
-const REMOVE_CARD_PREVIEW_ITEM = document.getElementById('removeCardPreviewItem') // Seleccionamos el botón que borrará los elementos del carrito
+const REMOVE_CARD_PREVIEW_ITEM = document.getElementById('removeCardPreviewItem'); // Seleccionamos el botón que borrará los elementos del carrito
 
 // Funciones
 MENU_BTN.addEventListener('click', () => { // Al hacer click en el botón de abrir el menú
-    MENU.classList.add('show'); // Mostrar el menú de navegación
-    BLACK_LAYER.classList.add('show'); // Mostrar la capa oscura
-    BODY.style.overflowY = 'hidden'; // Bloqueamos el scroll
+    MENU.classList.add('show') // Mostrar el menú de navegación
+    BLACK_LAYER.classList.add('show') // Mostrar la capa oscura
+    BODY.style.overflowY = 'hidden' // Bloqueamos el scroll
     
-});
+})
 
 function closeMenu() { // Función para cerrar el menú
-    MENU.classList.remove('show'); // Ocultamos el menú de navegación
-    BLACK_LAYER.classList.remove('show'); // Quitamos la capa oscura
+    MENU.classList.remove('show') // Ocultamos el menú de navegación
+    BLACK_LAYER.classList.remove('show') // Quitamos la capa oscura
     BODY.style.overflowY = 'scroll'; // Desbloqueamos el scroll
     
 }
 
 CLOSE_BTN.addEventListener('click', () => { // Al hacer click en el botón de cerrar el menú
-    closeMenu(); // Ejecutamos la función para cerrar el menú
-});
+    closeMenu() // Ejecutamos la función para cerrar el menú
+})
 
 CART_PREVIEW_BTN.addEventListener('click', () => { // Al hacer click en el botón de abrir el carrito
     CART_RED_DOT.style.display = 'none' // Se quitará el circulo rojo al lado del carrito
-    CART_PREVIEW.classList.add('show'); // Mostrar el carrito
-    BLACK_LAYER.classList.add('show'); // Mostrar la capa oscura
-    BODY.style.overflowY = 'hidden'; // Bloqueamos el scroll
+    CART_PREVIEW.classList.add('show') // Mostrar el carrito
+    BLACK_LAYER.classList.add('show') // Mostrar la capa oscura
+    BODY.style.overflowY = 'hidden' // Bloqueamos el scroll
     
-});
+})
 
 function closeCart() { // Función para cerrar el carrito
-    CART_PREVIEW.classList.remove('show'); // Ocultamos el carrito
-    BLACK_LAYER.classList.remove('show'); // Quitar la capa oscura
-    BODY.style.overflowY = 'scroll'; // Desbloqueamos el scroll
+    CART_PREVIEW.classList.remove('show') // Ocultamos el carrito
+    BLACK_LAYER.classList.remove('show') // Quitar la capa oscura
+    BODY.style.overflowY = 'scroll' // Desbloqueamos el scroll
     
 }
 
 CLOSE_CART_BTN.addEventListener('click', () => { // Al hacer click en el botón de cerrar el carrito
-    closeCart(); // Ejecutamos la función para cerrar el carrito
-});
+    closeCart() // Ejecutamos la función para cerrar el carrito
+})
 
 BLACK_LAYER.addEventListener('click', () => { // Al hacer click en la capa oscurecida
-    closeMenu(); // Ejecutamos la función para cerrar el menú
-    closeCart(); // Ejecutamos la función para cerrar el carrito
-});
+    closeMenu() // Ejecutamos la función para cerrar el menú
+    closeCart() // Ejecutamos la función para cerrar el carrito
+})
 
 
 function updateCart() { // Función que actualiza el carrito
@@ -70,7 +71,7 @@ function updateCart() { // Función que actualiza el carrito
         <span class="body">${product.id}</span>
         <span class="body">${product.price}</span>
         <span class="body">${product.quantity}</span>
-        <button class="delete-item" data-index="${index}"><i class="ri-delete-bin-2-line"></i></button>
+        <button class="link delete-item" title="Eliminar producto del carrito" data-index="${index}"><i class="ri-delete-bin-2-line"></i></button>
         ` /* Añadimos la siguiente información:
                 - Un span con el nombre del producto añadido
                 - Un span con el precio del producto añadido
@@ -93,3 +94,5 @@ CART_PREVIEW_CARDS.addEventListener('click', e => { // Evento generado por IA. E
 
     updateCart() // Ejecutamos la función que actualiza el carrito
 })
+
+})()

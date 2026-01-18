@@ -1,3 +1,4 @@
+(() => {
 // Constantes
 const ADD_PRODUCT_BTN = document.getElementById('addProductBtn') // Seleccionamos el botón de añadir a la cesta
 const HEADER = document.querySelector('.header') // Seleccionamos el header
@@ -32,3 +33,4 @@ ADD_PRODUCT_BTN.addEventListener('click', () => { // Al hacer click en el botón
     window.updateCart(cart) // Ejecutamos la función que actualiza el carrito con los datos del array
 })
 
+})()
