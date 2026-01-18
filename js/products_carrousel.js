@@ -1,4 +1,3 @@
-(() => {
 // Constantes
 const PRODUCTS_ARRAY = [ // Array con la información de cada producto del carrousel
     { // Información primer producto
@@ -11,7 +10,6 @@ const PRODUCTS_ARRAY = [ // Array con la información de cada producto del carro
         source: 'media/shaker.webp', img: 'media/shaker.jpg', desc: 'Shaker LoMás Fitness', alt: 'Shaker de LoMás Fitness'
     }
 ]
-
 const ROTATIVE_IMG = document.getElementById('rotativeImage') // Seleccionamos la imagen que va a cambiar
 const ROTATIVE_SOURCE = document.getElementById('rotativeSource') // Seleccionamos el atributo "source" que va a cambiar
 const ROTATIVE_DESC = document.getElementById('rotativeDesc') // Seleccionamos el texto que va a cambiar
@@ -86,5 +84,3 @@ function startCarrousel() { // Función que inicia el carrousel
 }
 
 startCarrousel() // Ejecutamos la función que inicia el carrousel
-
-})()

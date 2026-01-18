@@ -1,4 +1,3 @@
-(() => {
 // Constantes
 const MENU_BTN = document.getElementById('menuBtn'); // Seleccionamos el botón que nos permite abrir el menú
 const MENU = document.getElementById('menuLinks'); // Seleccionamos el menú de navegación
@@ -94,5 +93,3 @@ CART_PREVIEW_CARDS.addEventListener('click', e => { // Evento generado por IA. E
 
     updateCart() // Ejecutamos la función que actualiza el carrito
 })
-
-})()

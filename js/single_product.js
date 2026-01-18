@@ -1,4 +1,3 @@
-(() => {
 // Constantes
 const ADD_PRODUCT_BTN = document.getElementById('addProductBtn') // Seleccionamos el botón de añadir a la cesta
 const HEADER = document.querySelector('.header') // Seleccionamos el header
@@ -7,7 +6,6 @@ const PROD__PRICE = document.querySelector('.product__price').innerHTML // Selec
 const RED_DOT = document.querySelector('.red-dot') // Seleccionamos el punto rojo que aparecerá al añadir algo al carrito
 
 // Variables
-
 let cart = JSON.parse(localStorage.getItem('cart')) || [] // Cargamos la información del carrito obtenida al hacer click en "Añadir a la cesta". Si no existe se crea un array vacío
 
 // Funciones
@@ -32,5 +30,3 @@ ADD_PRODUCT_BTN.addEventListener('click', () => { // Al hacer click en el botón
 
     window.updateCart(cart) // Ejecutamos la función que actualiza el carrito con los datos del array
 })
-
-})()

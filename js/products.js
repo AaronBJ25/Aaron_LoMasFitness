@@ -1,4 +1,3 @@
-(() => {
 // Constantes
 const PROD_BLOCK = document.querySelectorAll('.product-block') // Seleccionamos todos los bloques de productos
 const PROD_SECTION = document.querySelectorAll('.product-section') // Seleccionamos todas las secciones de productos
@@ -146,5 +145,4 @@ PROD_BLOCK.forEach(section => { // Para cada bloque de productos
     });
 });
 
-})()
 
