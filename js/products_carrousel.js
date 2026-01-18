@@ -1,3 +1,4 @@
+(() => {
 // Constantes
 const PRODUCTS_ARRAY = [ // Array con la información de cada producto del carrousel
     { // Información primer producto
@@ -84,3 +85,5 @@ function startCarrousel() { // Función que inicia el carrousel
 }
 
 startCarrousel() // Ejecutamos la función que inicia el carrousel
+
+})()

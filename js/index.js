@@ -1,3 +1,4 @@
+(() => {
 // Constantes
 const MENU_BTN = document.getElementById('menuBtn'); // Seleccionamos el botón que nos permite abrir el menú
 const MENU = document.getElementById('menuLinks'); // Seleccionamos el menú de navegación
@@ -22,8 +23,7 @@ MENU_BTN.addEventListener('click', () => { // Al hacer click en el botón de abr
 function closeMenu() { // Función para cerrar el menú
     MENU.classList.remove('show') // Ocultamos el menú de navegación
     BLACK_LAYER.classList.remove('show') // Quitamos la capa oscura
-    BODY.style.overflowY = 'scroll'; // Desbloqueamos el scroll
-    
+    BODY.style.overflowY = 'scroll'; // Desbloqueamos el scroll    
 }
 
 CLOSE_BTN.addEventListener('click', () => { // Al hacer click en el botón de cerrar el menú
@@ -93,3 +93,4 @@ CART_PREVIEW_CARDS.addEventListener('click', e => { // Evento generado por IA. E
 
     updateCart() // Ejecutamos la función que actualiza el carrito
 })
+})()
