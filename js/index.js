@@ -16,8 +16,7 @@ const REMOVE_CARD_PREVIEW_ITEM = document.getElementById('removeCardPreviewItem'
 MENU_BTN.addEventListener('click', () => { // Al hacer click en el botón de abrir el menú
     MENU.classList.add('show') // Mostrar el menú de navegación
     BLACK_LAYER.classList.add('show') // Mostrar la capa oscura
-    BODY.style.overflowY = 'hidden' // Bloqueamos el scroll
-    
+    BODY.style.overflowY = 'hidden' // Bloqueamos el scroll   
 })
 
 function closeMenu() { // Función para cerrar el menú

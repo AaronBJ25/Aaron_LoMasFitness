@@ -4,6 +4,9 @@ const SERVICES = document.getElementById('services'); // Seleccionamos la secci�
 const SERVICES_BTN = document.getElementById('servicesBtn'); // Seleccionamos el enlace de servicios en el menú de navegación
 const REVIEWS = document.getElementById('reviews'); // Seleccionamos la sección de reseñas
 const REVIEWS_BTN = document.getElementById('reviewsBtn'); // Seleccionamos el enlace de reseñas en el menú de navegación
+const MENU = document.getElementById('menuLinks'); // Seleccionamos el menú de navegación
+const BLACK_LAYER = document.getElementById('blackLayer'); // Seleccionamos la capa que oscurecerá el resto de la página al abrir el menú y el carrito
+const BODY = document.querySelector('body'); // Seleccionamos el body del documento
 
 //Funciones
 function closeMenu() { // Función para cerrar el menú
